@@ -1,0 +1,31 @@
+<!doctype html>
+<html lang="id">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#f6f4ee">
+  <title>Demo Codex — daftar tugas</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <main class="app">
+    <header>
+      <div class="eyebrow">DEMO PERTAMA SAYA · DIBUAT DENGAN CODEX</div>
+      <h1>Hari ini, pelan-pelan saja.</h1>
+      <p class="intro">Daftar kecil untuk membantu memulai. Tambahkan tugas, lalu tandai saat selesai.</p>
+    </header>
+    <section class="card" aria-label="Daftar tugas">
+      <form id="task-form">
+        <label class="sr-only" for="task-input">Tugas baru</label>
+        <input id="task-input" type="text" maxlength="100" placeholder="Contoh: belajar GitHub Pages" autocomplete="off" required>
+        <button type="submit">Tambah tugas <span aria-hidden="true">＋</span></button>
+      </form>
+      <div class="list-heading"><h2>Daftar saya</h2><span id="count">0 tugas</span></div>
+      <ul id="task-list"></ul>
+      <p id="empty">Belum ada tugas. Tambahkan satu di atas ✨</p>
+    </section>
+    <footer>Demo sederhana · Gratis di-host dengan GitHub Pages</footer>
+  </main>
+  <script src="script.js"></script>
+</body>
+</html>
